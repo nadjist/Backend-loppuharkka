@@ -6,6 +6,6 @@ router = APIRouter()
 
 @router.get('/players/{id}')
 def getPlayerById(id: int):
-    if id not in players:
-        raise HTTPException(status_code=404, message="Tuntematon pelaaja")
+    if not any(player['id'] == id for player in players):
+        raise HTTPException(status_code=404, detail="Tuntematon pelaaja")
     return players[id]
