@@ -6,7 +6,10 @@ Create virtual environment
 Activate venv, VSCode activates automatically.
 
 Open Terminal, make sure you have venv activated.
+Install FastAPI:
+write to terminal: pip install fastapi
 Install Uvicorn:
-write to terminal:
-pip install uvicorn
+write to terminal: pip install uvicorn
 uvicorn main:app --reload
+
+http://127.0.0.1:8000/docs 
