@@ -3,7 +3,7 @@ made with Python 3.11.3
 
 Create virtual environment
 - in VSCode, Command Pallette (Ctrl+Shift+P) -> white Python: Create Environment -> select Venv -> Select Python installation
-Activate venv, VSCode activates automatically.
+Activate venv, VSCode activates automatically after install.
 
 Open Terminal, make sure you have venv activated.
 Install FastAPI:
