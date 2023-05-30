@@ -1,4 +1,3 @@
-from typing import Literal, get_args
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from database import events, players
@@ -27,4 +26,4 @@ def createEvent(eventIn: EventBase, id: int):
     newEventId = len(events)
     event = Event(**eventIn.dict(), id = newEventId, timestamp = ts, player_id = id)
     events.append(event.dict())
-    return event 
+    return event
