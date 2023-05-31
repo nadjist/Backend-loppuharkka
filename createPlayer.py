@@ -10,7 +10,7 @@ class PlayerBase(BaseModel):
 class Player(PlayerBase):
     id: int
 
-@router.post('/player', status_code=201)
+@router.post('/players', status_code=201)
 def createPlayer(playerIn: PlayerBase):
     newPlayerId = len(players)
     player = Player(**playerIn.dict(), id = newPlayerId)
